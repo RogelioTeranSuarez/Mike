@@ -132,6 +132,6 @@ function App() {
 
 export default App;
 
-const container = document.getElementById('App');
-const root = ReactDOM.createRoot(container);
-root.render(<App />);
+if (document.getElementById('app')) {
+  ReactDOM.render(<App />, document.getElementById('app'));
+}
